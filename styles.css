@@ -3,7 +3,7 @@ body {
     color: #fff;
 }
 section:first-of-type {
-    background: linear-gradient(to right, #5d4157, #a8caba);
+    background: linear-gradient(to right, #5f4a5a, #58515d);
 }
 
 
@@ -13,15 +13,15 @@ section:not(:first-of-type) {
 }
 
 section:nth-of-type(2) {
-    background: #14181b;
+    background: linear-gradient(to left, #14181b, #232629);
 }
 
 section:nth-of-type(3) {
-    background: #121618;
+    background: linear-gradient(to right, #121618, #35393c);
 }
 
 section:nth-of-type(4) {
-    background: #0d1012;
+    background: linear-gradient(to left, #0d1012, #3e4347);
 }
 
 section:nth-of-type(5) {
