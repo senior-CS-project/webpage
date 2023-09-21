@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/3b3f0b40a4.js" crossorigin="anonymous"></script>
-
+    <script src="modernizr.custom.js"></script>
 </head>
 <!-- Navbar-->
 <header class="header fixed-top">
@@ -41,7 +42,7 @@
 </header>
 
 
-<!-- Demo header-->
+<!-- intro-->
 <section class="py-5 m-1 header text-center text-white mt-5" id="hero">
     <div class="container py-5 text-white">
         <header class="py-5 my-lg-5">
@@ -51,7 +52,7 @@
     </div>
 </section>
 
-<!-- Demo section 1 -->
+<!-- about -->
 <section class="py-5 m-1 d-flex align-items-center" id="one">
     <div class="container py-5">
         <div class="row text-center">
@@ -67,17 +68,71 @@
     </div>
 </section>
 
-<!-- Demo section 2-->
+<!-- documents-->
 <section class="py-5 m-1 d-flex align-items-center" id="two">
-    <div class="container py-5">
+    <div class="container py-5 text-dark">
         <h2 class="h1 mb-4 text-center">Documents</h2>
-        
-            
-        </div>
+
+        <ul class="grid cs-style-1">
+            <li>
+                <a href="https://docs.google.com/document/d/1xv_pR-MWioqB1SUthPg6Pq_hl0nEuUU70wVY_EjQhUI/edit?usp=sharing" target="_blank">
+                <figure>
+                    <img src="docsimg.jpg"
+                        alt="img06">
+                    <figcaption>
+                        <h3>Project Specification Report</h3>
+                        <span>12/12/2012</span>
+
+                    </figcaption>
+                </figure>
+                </a>
+            </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1NA_nEiAfiWk3bqHou7YIiB77Byyt1IRRbknFcRXA9DE/edit?usp=sharing" target="_blank">
+                    <figure>
+                        <img src="docsimg.jpg"
+                        alt="img06">
+                        <figcaption>
+                            <h3>Analysis Requirment Report</h3>
+                            <span>12/12/2012</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+            </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1LEE3vf-pvUjpEM1V9K640K-_-mNrPuvYCIjupzSpmaE/edit?usp=sharing" target="_blank">
+                    <figure>
+                        <img src="docsimg.jpg"
+                        alt="img06">
+                        <figcaption>
+                            <h3>Detailed Design Report</h3>
+                            <span>12/12/2012</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+            </li>
+            <li>
+                <a href="https://docs.google.com/document/d/1PL71wuRqcajUr64Y7Hup2_LhYMwm3pm5tZ4MGURKCYo/edit?usp=sharing" target="_blank">
+                    <figure>
+                        <img src="docsimg.jpg"
+                        alt="img06">
+                        <figcaption>
+                            <h3>Final Report</h3>
+                            <span>12/12/2012</span>
+                        </figcaption>
+                    </figure>
+                </a>
+                
+            </li>
+            <!-- ... -->
+        </ul>
+        <script src="js/toucheffects.js"></script>
     </div>
 </section>
 
-<!-- Demo section 3 -->
+<!-- team members-->
 <section class="py-5 m-1 d-flex align-items-center" id="three">
     <div class="container py-5">
         <h2 class="h1 mb-4 text-center">Team Members</h2>
