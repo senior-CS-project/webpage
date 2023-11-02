@@ -3,9 +3,12 @@ body {
     color: #fff;
 }
 section:first-of-type {
-    background: linear-gradient(to right, #5f4a5a, #58515d);
+    background-image: url("https://serokell.io/files/1c/1c5lire1.Deep_Learning_in_Computer_Vision_pic4.png");
+	background-repeat: no-repeat;
+	background-size:cover; 
+	background-position: center;	
+	overflow: hidden;
 }
-
 
 section:not(:first-of-type) {
     min-height: 50vh;
