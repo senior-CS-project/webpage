@@ -1,15 +1,55 @@
-import React from 'react'
+import React, { useState, useContext } from "react";
+import { AuthContext } from "../AuthContext";
+import { NavLink } from "react-router-dom";
+import "./navbar.css";
 
-export default function Navbar() {
+const Navbar = () => {
+  const { isLoggedIn, login, logout} = useContext(AuthContext)
+  // Function to handle logout
+  const handleLogout = () => {
+    logout()
+    
+  };
+
   return (
-        <nav className="nav">
-            <a href="/" className='site-title'>Name</a>
-            <ul>
-                <a href="/signin" >Name</a>
-                <a href="/signin">Name</a>
-            </ul>
-  
+    <nav className="navbar">
+      <div className="container-fluid px-5">
+        <div className="logo">VIGILANT</div>
+        <div className="nav-elements pt-2">
+          <ul>
+            {isLoggedIn ? (
+              <>
+                <li>
+                  <NavLink to="/">My Stores</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">Demographics</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/">Forecasting</NavLink>
+                </li>
+                <li>
+                  <NavLink onClick={handleLogout} to="/">
+                    Logout
+                  </NavLink>
+                </li>
+                
+              </>
+            ) : (
+              <>
+                <li>
+                  <NavLink to="/">Home</NavLink>
+                </li>
+                <li>
+                  <NavLink to="/login">Login</NavLink>
+                </li>
+              </>
+            )}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
-        </nav>
-    )
-}
+export default Navbar;

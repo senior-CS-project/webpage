@@ -1,35 +1,53 @@
 import React, {useState, useEffect} from 'react'
-import {BrowserRouter as Router, Route, Routes, Switch} from 'react-router-dom'
+import {BrowserRouter, Route, Routes, Switch} from 'react-router-dom'
 import Home from './pages/Home.js';
-import Login from './pages/Login.js';
+import LoginRouter from './pages/LoginRouter.js';
 import ClientPage from './pages/ClientPage.js';
 import NotFoundPage from './pages/NotFound.js';
-import SignIn from './pages/SignIn.js';
+import SignUpRouter from './pages/SignupRouter.js';
 import Navbar from './components/Navbar.js';
+import { auth, googleAuth } from "./config/firebase";
+import { AuthContext } from './AuthContext.js';
+import { useContext } from 'react';
+import CameraPage from './pages/CameraPage.js';
+import EmployeePage from './pages/EmployeePage.js';
+import Heatmap from './pages/Heatmap.js';
 
 function App() {
-  const [data, setData] = useState([]);
+  const [user, setUser] = useState(null);
+  const { isLoggedIn, login, logout} = useContext(AuthContext)
 
-  
+
+  const wrapperStyle = {
+    backgroundColor: '#efebfa', // Set your desired background color
+    minHeight: '100vh', // Ensure the background color covers the entire viewport height
+  };
 
   return (
-    
-    <Router>
-                             
-      <Navbar/> 
-      <Routes>
-        <Route index element={<Home/>}></Route>
-        <Route path='/home' element={<Home/>}></Route>
-        <Route path='/login' element={<Login/>}></Route>
-        <Route path='/clientPage' element={<ClientPage/>}></Route>
-        <Route path='/signin' element={<SignIn/>}></Route>
+    <BrowserRouter>
+      <div style={wrapperStyle}>
+        <Navbar />
 
-        <Route path='*' element={<NotFoundPage/>}></Route>
+        <Routes>
+          <Route path="/" element={<Home />} />
+            <Route path="home" element={<Home />} />
+            <Route path="login" element={<LoginRouter />} />
+            <Route path="signup" element={<SignUpRouter />} />
+            
 
-      </Routes>
-    </Router>
-    
-  )
+            <Route path="clientPage" element={<ClientPage />}/>
+            <Route path="cameraPage" element={<CameraPage />}/>
+            <Route path="employeePage" element={<EmployeePage />}/>
+            <Route path="heatmapPage" element={<Heatmap />}/>
+
+            <Route path="cameraPage" element={<CameraPage />}/>
+
+            <Route path="*" element={<NotFoundPage />} />
+          <Route />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App

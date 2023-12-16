@@ -1,0 +1,70 @@
+[debug] [2023-12-16T09:51:08.717Z] ----------------------------------------------------------------------
+[debug] [2023-12-16T09:51:08.718Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\onura\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-16T09:51:08.718Z] CLI Version:   13.0.2
+[debug] [2023-12-16T09:51:08.719Z] Platform:      win32
+[debug] [2023-12-16T09:51:08.719Z] Node Version:  v18.16.0
+[debug] [2023-12-16T09:51:08.719Z] Time:          Sat Dec 16 2023 12:51:08 GMT+0300 (GMT+03:00)
+[debug] [2023-12-16T09:51:08.720Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-16T09:51:08.724Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-16T09:51:08.724Z] > authorizing via signed-in user (onurasimilhan01@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\onura\Documents\491\vigilant\frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-16T09:51:24.263Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-16T09:51:24.873Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-16T09:51:24.873Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-12-16T09:51:38.487Z] ----------------------------------------------------------------------
+[debug] [2023-12-16T09:51:38.488Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\onura\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-16T09:51:38.489Z] CLI Version:   13.0.2
+[debug] [2023-12-16T09:51:38.489Z] Platform:      win32
+[debug] [2023-12-16T09:51:38.489Z] Node Version:  v18.16.0
+[debug] [2023-12-16T09:51:38.490Z] Time:          Sat Dec 16 2023 12:51:38 GMT+0300 (GMT+03:00)
+[debug] [2023-12-16T09:51:38.490Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-16T09:51:38.494Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-16T09:51:38.495Z] > authorizing via signed-in user (onurasimilhan01@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\onura\Documents\491\vigilant\frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-12-16T09:52:04.309Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-12-16T09:52:04.309Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"491","name":"vigilant-webpage"}
+[debug] [2023-12-16T09:52:05.359Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2023-12-16T09:52:05.359Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at least 6 characters long"},{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2023-12-16T09:52:05.556Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\onura\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\onura\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
