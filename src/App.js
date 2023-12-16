@@ -29,7 +29,7 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/webpage" element={<Home />} />
+          <Route path="/" element={<Home />} />
             <Route path="home" element={<Home />} />
             <Route path="login" element={<LoginRouter />} />
             <Route path="signup" element={<SignUpRouter />} />
