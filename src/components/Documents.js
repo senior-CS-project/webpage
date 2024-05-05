@@ -23,17 +23,23 @@ function Documents() {
         <OrderCard
           bgClass="bg-c-pink"
           title="Detailed Design Report"
-          deadline={"TBD"}
+          deadline={"15.03.2024"}
           link="https://docs.google.com/document/d/1LEE3vf-pvUjpEM1V9K640K-_-mNrPuvYCIjupzSpmaE/edit?usp=sharing"
         />
 
         <OrderCard
           bgClass="bg-c-purple"
           title="Final Report"
-          deadline={"TBD"}
+          deadline={"10.05.2024"}
           link="https://docs.google.com/document/d/1PL71wuRqcajUr64Y7Hup2_LhYMwm3pm5tZ4MGURKCYo/edit?usp=sharing"
         />
 
+<OrderCard
+          bgClass="bg-c-green"
+          title="User Manual"
+          deadline={"10.05.2024"}
+          link="https://www.canva.com/design/DAGEWJf28oU/frbGwvRBZlXlA1cj7u0gFA/edit?utm_content=DAGEWJf28oU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        />  
         
       </div>
     </div>

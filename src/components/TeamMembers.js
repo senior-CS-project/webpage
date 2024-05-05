@@ -21,12 +21,12 @@ function TeamMembers() {
             <TeamMember
             bgClass="bg-c-blue"
               name="Onur Asım İlhan"
-              image="https://media.licdn.com/dms/image/C5603AQHw_cCLgYggCA/profile-displayphoto-shrink_800_800/0/1659453623119?e=1707350400&v=beta&t=c0ALUq420HDxe2UQaOC0Wm9OWJktEbJjJi73Q8FUIQ0"
+              image="https://media.licdn.com/dms/image/C5603AQHw_cCLgYggCA/profile-displayphoto-shrink_400_400/0/1659453623119?e=1720656000&v=beta&t=aexDsBHIueWFCur7HB0HJ2rV40cY8EpxLTNpYvYn9fQ"
             />
             <TeamMember
             bgClass="bg-c-blue"
               name="Efe Erkan"
-              image="https://media.licdn.com/dms/image/C4D03AQGcl6Irh9xwTQ/profile-displayphoto-shrink_100_100/0/1651777364038?e=1707350400&v=beta&t=2njRSwGxCC31cK-LtRvBAPYl2R8z9JrrUmhflFU1CL4"
+              image="https://media.licdn.com/dms/image/C4D03AQGcl6Irh9xwTQ/profile-displayphoto-shrink_400_400/0/1651777364038?e=1720656000&v=beta&t=mNXyc1gPsv7AXNxXX0eD2Qs7wmTlqE8JQRUcg4TycE8"
             />
             <TeamMember
             bgClass="bg-c-blue"
@@ -36,7 +36,7 @@ function TeamMembers() {
             <TeamMember
             bgClass="bg-c-blue"
               name="Uygar Onat"
-              image="https://media.licdn.com/dms/image/C4E03AQGu_xlquvcsTw/profile-displayphoto-shrink_400_400/0/1647302699268?e=1707350400&v=beta&t=iBkyPJP1TMF-lCJiO5BQsj12XwRAY_VPFcHfeZRgn1A"
+              image="https://media.licdn.com/dms/image/C4E03AQGu_xlquvcsTw/profile-displayphoto-shrink_400_400/0/1647302699268?e=1720656000&v=beta&t=AUKaSJW9sI1nsgpFKh5NlJyr5PpiAngUGziF6eKm8I0"
             />
           </div>
         </div>

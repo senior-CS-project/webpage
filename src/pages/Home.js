@@ -40,7 +40,7 @@ export default function Home() {
       <img
         src={image}
         className="img-fluid"
-        alt="Your Image Alt Text"
+        alt="Text"
         style={{ opacity: imageOpacity }}
       />
 
